@@ -27,7 +27,7 @@ def t_ID(t):
     r'[a-zA-Z_][a-zA-Z0-9_]*'
     if t.value in reserved:
         t.type = reserved[t.value]
-        t.description = f'Palabra reservada {t.type.lower()}'
+        t.description = f' reservada {t.type.lower()}'
     else:
         t.type = 'ID'
         t.description = 'Identificador'
